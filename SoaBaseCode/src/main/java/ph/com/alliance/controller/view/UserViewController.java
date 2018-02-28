@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/user")
 public class UserViewController {
 	
-    @RequestMapping(value = "/Projects", method = RequestMethod.GET)
+    @RequestMapping(value = "/dashBoards", method = RequestMethod.GET)
     public String viewMessages(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
     	System.out.println("@/request VIEW CONTROLLER CALLED.");
-        return "/Projects";
+        return "/dashBoards";
     }
 
 }
