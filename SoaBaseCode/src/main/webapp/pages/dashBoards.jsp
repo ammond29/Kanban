@@ -4,6 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/styleDashboard.css" />
 <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/media-queries.css" />
@@ -12,8 +15,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <title>Dashboard</title>
@@ -26,7 +28,9 @@
     font-size: 20px;
 }
 
-
+.modal-content{
+  position: center;
+}
 
 
  * {
@@ -69,10 +73,11 @@
 <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Kanbanawa</a>
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Kanban</a>
         </div>
         <ul class="nav navbar-nav">
-         
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModalHorizontal" >Add task</a></li>
         </ul>
       </div>
     </nav>
