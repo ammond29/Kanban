@@ -198,6 +198,14 @@
                   <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="due_date" name="due_date">
                 </div>
                 <div class="form-group">
+                  <label for="task_priority">Priority:</label>
+                  <select class="form-control" id="task_priority" name="task_priority">
+                    <option value="Todo">Low</option>
+                    <option value="In Progress">Medium</option>
+                    <option value="In Progress">High</option>
+                  </select>
+                </div>
+                <div class="form-group">
                   <label for="task_status">Task Status:</label>
                   <select class="form-control" id="task_status" name="task_status">
                     <option value="Todo">Todo</option>
