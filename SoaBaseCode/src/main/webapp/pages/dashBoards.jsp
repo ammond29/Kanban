@@ -4,6 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/styleDashboard.css" />
 <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/media-queries.css" />
@@ -24,6 +27,17 @@
 
 <style type="text/css">
   
+<<<<<<< HEAD
+.navbar-brand{
+  font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.modal-content{
+  position: center;
+}
+=======
+>>>>>>> b3a4f4c683baf7fc2e1e87f7fb115c90528f9a1a
 
       .modal{
         margin: center;
@@ -73,12 +87,20 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
+<<<<<<< HEAD
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Kanban</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModalHorizontal" >Add task</a></li>
+=======
           <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span>KanBanawa</a>
         </div>
         <ul class="nav navbar-nav">
           <li class="_home"><a href="#">Home</a></li>
           <li><a href="#" data-toggle="modal" data-target="#myModalHorizontal" >Add task</a></li>
           <li class="_logout"><a href="#" >Logout</a></li>
+>>>>>>> b3a4f4c683baf7fc2e1e87f7fb115c90528f9a1a
         </ul>
       </div>
     </nav>
