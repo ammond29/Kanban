@@ -20,7 +20,13 @@ public class HomeController {
     @RequestMapping(method=RequestMethod.GET)
     public String loadMainMenuIndex(HttpServletRequest request, HttpServletResponse response, ModelMap map){
     	System.out.println("Home VIEW CONTROLLER CALLED.");
-		return "/registers";
+		return "/logIns";
+    }
+    
+    @RequestMapping(value = "/registers", method = RequestMethod.GET)
+    public String viewRegisterForm(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
+    	System.out.println("@/request REGISTRATION VIEW CONTROLLER CALLED.");
+        return "/registers";
     }
 
 }

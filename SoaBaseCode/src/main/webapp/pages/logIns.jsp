@@ -124,13 +124,13 @@
   </header>
 
 
-  <div class="dropdown">
+ <!--  <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">Login as</button>
     <div id="myDropdown" class="dropdown-content">
       <a href="#admin">Admin</a>
       <a href="#user">User</a>
     </div>
-  </div>
+  </div> -->
 
   </nav>
 
@@ -148,7 +148,7 @@
                       </br>
 
                       <input type="submit" value="Login"></br>
-                      <input type="submit" value="Register">
+                      <a href="/SoaBaseCode/registers">Register</a>
               </div>
           </div>
         </div>

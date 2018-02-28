@@ -13,9 +13,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class UserViewController {
 	
     @RequestMapping(value = "/dashBoards", method = RequestMethod.GET)
-    public String viewMessages(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
-    	System.out.println("@/request VIEW CONTROLLER CALLED.");
+    public String viewDashboard(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
+    	System.out.println("@/request PROJECTS VIEW CONTROLLER CALLED.");
         return "/dashBoards";
     }
+    
+    
 
 }
