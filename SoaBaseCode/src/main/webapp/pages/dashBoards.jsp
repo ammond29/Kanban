@@ -168,7 +168,9 @@
                         List group item heading
                         </label>
                       </div>
-                      <span class="priority_colored_med">Priority: MEDIUM</span>
+                      <div class="priority_level">
+                          <span class="priority_colored_med">Priority: MEDIUM</span>
+                        </div>
                     </li>
                   </ul>
                 </div>
