@@ -37,7 +37,7 @@
     body{
     }
 
-    input[type=text], select{
+    input[type=text], input[type=password], select{
     width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -124,34 +124,37 @@
   </header>
 
 
-  <div class="dropdown">
+ <!--  <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">Login as</button>
     <div id="myDropdown" class="dropdown-content">
       <a href="#admin">Admin</a>
       <a href="#user">User</a>
     </div>
-  </div>
+  </div> -->
 
   </nav>
 
   <header class="login_user" >
-     <div class="login_user_container" >
+  <form action="${pageContext.request.contextPath}/getUser" method="POST">
+  	<div class="login_user_container" >
         <div class="row" align="center">
           <div class="col-md-5 col-md-3" >
               <div class="form-login">
                       <h4>Login</h4>
 
-                      <input type="text" id="uname" class="form-input" placeholder="Username"/>
+                      <input type="text" name="email" id="email" class="form-input" placeholder="Email"/>
                       </br>
-                      <input type="text" id="upass" class="form-input" placeholder="Password"/>
+                      <input type="password" name="password" id="upass" class="form-input" placeholder="Password"/>
                       </br>
 
                       <input type="submit" value="Login"></br>
-                      <input type="submit" value="Register">
+                      <a href="/SoaBaseCode/registers">Register</a>
               </div>
           </div>
         </div>
      </div>
+  </form>
+     
   </header>
 
 

@@ -63,6 +63,13 @@ public class ModuleAPIController {
     	return "redirect:user/dashBoards?id=" + u.getUser_id();
     }
     
+    @RequestMapping(value ="/getUser", method= RequestMethod.POST)
+    
+    public String getUser(HttpServletRequest request, HttpServletResponse response, ModelMap map) throws Exception{
+    	
+		return null;
+    	
+    }
     /**
      * 
      * @param uid
