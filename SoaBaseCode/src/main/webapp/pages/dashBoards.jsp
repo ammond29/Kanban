@@ -83,59 +83,7 @@
       </div>
     </nav>
 
-    <!-- Modal -->
-      <div>
-      <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
-        aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <button type="button" class="close" 
-                data-dismiss="modal">
-              <span aria-hidden="true">×</span>
-              <span class="sr-only">Close</span>
-              </button>
-              <h4 class="modal-title" id="myModalLabel">
-                Add Task
-              </h4>
-            </div>
-            <!-- Modal Body -->
-            <div class="modal-body">
-              <form action="" method="post" autocomplete="off">
-                <div class="form-group">
-                  <label for="task_title">Task Title:</label>
-                  <input type="text" class="form-control" placeholder="Enter task name"  id="task_title" name="task_title">
-                </div>
-                <div class="form-group">
-                  <label for="task_details">Task Details:</label>
-                  <textarea class="form-control"  placeholder="Enter task details"  rows="5" id="task_details" name="task_details"></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="due_date">Due Date:</label>
-                  <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="due_date" name="due_date">
-                </div>
-                <div class="form-group">
-                  <label for="task_status">Task Status:</label>
-                  <select class="form-control" id="task_status" name="task_status">
-                    <option value="Todo">Todo</option>
-                    <option value="In Progress">In Progress</option>
-                  </select>
-                </div>
-                <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-            <!-- Modal Footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger"
-                data-dismiss="modal">
-              Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- /.container -->
+    
 
     <div class="container-fluid">
         <div class="row">
@@ -195,7 +143,59 @@
           </div>
         </div> <!-- /.row -->
 
-      
+      <!-- Modal -->
+      <div>
+      <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="close" 
+                data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+              <span class="sr-only">Close</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">
+                Add Task
+              </h4>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <form action="" method="post" autocomplete="off">
+                <div class="form-group">
+                  <label for="task_title">Task Title:</label>
+                  <input type="text" class="form-control" placeholder="Enter task name"  id="task_title" name="task_title">
+                </div>
+                <div class="form-group">
+                  <label for="task_details">Task Details:</label>
+                  <textarea class="form-control"  placeholder="Enter task details"  rows="5" id="task_details" name="task_details"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="due_date">Due Date:</label>
+                  <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="due_date" name="due_date">
+                </div>
+                <div class="form-group">
+                  <label for="task_status">Task Status:</label>
+                  <select class="form-control" id="task_status" name="task_status">
+                    <option value="Todo">Todo</option>
+                    <option value="In Progress">In Progress</option>
+                  </select>
+                </div>
+                <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger"
+                data-dismiss="modal">
+              Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /.container -->
 
 </body>
 <script type="text/javascript">
