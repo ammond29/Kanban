@@ -12,6 +12,27 @@
 	<link rel="stylesheet" href="lib/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="lib/css/material-dashboard.css"/>
 	<link rel="stylesheet" href="css/media-queries.css" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

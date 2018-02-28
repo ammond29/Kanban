@@ -7,10 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Register</title>
 	<link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="lib/css/material-kit.css?v=2.0.2">
-    <!-- Documentation extras -->
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="lib/css/material-dashboard.css"/>
+	<link rel="stylesheet" href="css/media-queries.css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
@@ -55,13 +58,16 @@
  </div>
 </body>
 	<script src="lib/js/jquery-1.10.1.min.js"></script>
+	<script src="lib/js/bootstrap.min.js"></script>
+	<script src="lib/js/material.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+	
+	<script src="lib/js/arrive.min.js"></script>
+	 
+	<script src="lib/js/perfect-scrollbar.jquery.min.js"></script>
+	<script src="lib/js/material-dashboard.js?v=1.2.0"></script>
 	<script src="js/common.js"></script>
 	<script src="lib/js/jquery.blockUI.js"></script>
-	
-	 <script src="lib/js/material-kit.js?v=2.0.2"></script>
-	    <script src="lib/js/core/jquery.min.js"></script>
-    <script src="lib/js/core/popper.min.js"></script>
-    <script src=".lib/js/bootstrap-material-design.js"></script>
 	 <script>
 	$(document).ready(function() {
 		bindUserFormEvents();
