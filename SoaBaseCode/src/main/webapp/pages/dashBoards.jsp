@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/media-queries.css" />
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
@@ -21,17 +25,21 @@
 
 <style type="text/css">
   
-.navbar-brand{
-  font-family: 'Lobster', cursive;
-    font-size: 20px;
-}
 
+      .modal{
+        margin: center;
+      }
+      ._logout{
+        position: right;
+      }
 
+      .navbar-brand{
+        font-family: 'Lobster', cursive;
+        font-size: 20px;
 
+      }
 
- * {
-
-
+      *{
       border-radius: 0 !important;
       }
       body{
@@ -39,7 +47,7 @@
       }
       .panel-heading 
       {
-      font-family: 'Lobster Two', cursive;
+      font-family: 'Shadows Into Light Two', cursive;
       font-size:20px;
       font-weight: bolder;
       }
@@ -63,160 +71,21 @@
 </style>
 <body>
 
-
-
-
-<nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Kanbanawa</a>
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span>KanBanawa</a>
         </div>
         <ul class="nav navbar-nav">
-         
+          <li class="_home"><a href="#">Home</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModalHorizontal" >Add task</a></li>
+          <li class="_logout"><a href="#" >Logout</a></li>
         </ul>
       </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-          <div class="panel-group">
-            <div class="col-sm-4 panelspace">
-              <div class="panel panel-info">
-                <div class="panel-heading">Todo</div>
-                <div class="panel-body">
-                  <ul class="list-group">
-                    <li class="list-group-item"><span class="glyphicon glyphicon-hand-right"></span> Todo Task 1 <span class="badge">12</span></li>
-                    <li class="list-group-item"><span class="glyphicon glyphicon-hand-right"></span> Todo Task 2 <span class="badge">5</span></li>
-                    <li class="list-group-item"><span class="glyphicon glyphicon-hand-right"></span> Todo Task 2 <span class="badge">3</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 panelspace">
-              <div class="panel panel-primary">
-                <div class="panel-heading">In Progress</div>
-                <div class="panel-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <input type="checkbox" class="checkb" name="checkbox[]" id="checkbox1" value="1" />
-                        <label for="checkbox">
-                        List group item heading
-                        </label>
-                      </div>
-                      <div class="pull-right action-buttons">
-                        <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-                        <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
-                        <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <input type="checkbox" class="checkb" name="checkbox[]" id="checkbox2" value="2" />
-                        <label for="checkbox2">
-                        List group item heading 1
-                        </label>
-                      </div>
-                      <div class="pull-right action-buttons">
-                        <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-                        <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
-                        <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <input type="checkbox" class="checkb" name="checkbox[]" id="checkbox3" value="3" />
-                        <label for="checkbox3">
-                        List group item heading 2
-                        </label>
-                      </div>
-                      <div class="pull-right action-buttons">
-                        <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-                        <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
-                        <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <input type="checkbox" class="checkb" name="checkbox[]" id="checkbox4" value="4" />
-                        <label for="checkbox4">
-                        List group item heading 3
-                        </label>
-                      </div>
-                      <div class="pull-right action-buttons">
-                        <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-                        <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
-                        <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <input type="checkbox" class="checkb" name="checkbox[]" id="checkbox5" value="50" />
-                        <label for="checkbox5">
-                        List group item heading 4
-                        </label>
-                      </div>
-                      <div class="pull-right action-buttons">
-                        <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-                        <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
-                        <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-                     <div class="col-sm-4 panelspace">
-              <div class="panel panel-success">
-                <div class="panel-heading">Completed</div>
-                <div class="panel-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <span class="glyphicon glyphicon-ok"></span>
-                        <label for="checkbox">
-                        List group item heading
-                        </label>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <span class="glyphicon glyphicon-ok"></span>
-                        <label for="checkbox2">
-                        List group item heading 1
-                        </label>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <span class="glyphicon glyphicon-ok"></span>
-                        <label for="checkbox3">
-                        List group item heading 2
-                        </label>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <span class="glyphicon glyphicon-ok"></span>
-                        <label for="checkbox4">
-                        List group item heading 3
-                        </label>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="checkbox">
-                        <span class="glyphicon glyphicon-ok"></span>
-                        <label for="checkbox5">
-                        List group item heading 4
-                        </label>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /.row -->
-      <!-- Modal -->
+
+    <!-- Modal -->
+      <div>
       <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
         aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -269,12 +138,69 @@
       </div>
     </div> <!-- /.container -->
 
+    <div class="container-fluid">
+        <div class="row">
+          <div class="panel-group">
 
+            <div class="col-sm-4 panelspace">
+              <div class="panel panel-info">
+                <div class="panel-heading">Todo</div>
+                <div class="panel-body">
+                  <ul class="list-group">
+                    <li class="list-group-item"><span class="glyphicon glyphicon-hand-right"></span> Todo Task 1</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-sm-4 panelspace">
+              <div class="panel panel-primary">
+                <div class="panel-heading">In Progress</div>
+                <div class="panel-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="checkbox">
+                        <input type="checkbox" class="checkb" name="checkbox[]" id="checkbox1" value="1" />
+                        <label for="checkbox">
+                        List group item heading
+                        </label>
+                      </div>
+                      <div class="pull-right action-buttons">
+                        <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                        <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-sm-4 panelspace">
+              <div class="panel panel-success">
+                <div class="panel-heading">Completed</div>
+                <div class="panel-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="checkbox">
+                        <span class="glyphicon glyphicon-ok"></span>
+                        <label for="checkbox">
+                        List group item heading
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row -->
+
+      
 
 </body>
 <script type="text/javascript">
-    $('#due_date').datepicker({
+  $('#due_date').datepicker({
     autoclose: true,
     todayHighlight: true
   });
