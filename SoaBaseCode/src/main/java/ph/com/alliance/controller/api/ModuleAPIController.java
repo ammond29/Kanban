@@ -1,7 +1,10 @@
 package ph.com.alliance.controller.api;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -40,24 +43,24 @@ public class ModuleAPIController {
 	 * @return
 	 */
     @RequestMapping(value = "/saveUser", method = RequestMethod.POST)
-    @ResponseBody
+ 
     public String saveUser(HttpServletRequest request, HttpServletResponse response, ModelMap map) throws Exception{
     	User u = new User();
     	
-    	u.setUser_id(request.getParameter("user_id"));
+    	u.setUser_id(generatePrimaryKey());
+    	u.setEmail(request.getParameter("email"));
     	u.setFirstName(request.getParameter("firstName"));
     	u.setLastName(request.getParameter("lastName"));
-    	u.setEmail(request.getParameter("email"));
     	u.setPassword(request.getParameter("password"));
     	
-    	System.out.println("FUCK");
+    	System.out.println("AddPlease!");
     	if(!userService.createUser(u))
     		u = null;
     	
     	/*if(!dbSvc.createUser(this.convertToEntity(u))) {
     		u = null;
     	}*/
-    	return "/SoaBaseCode/";
+    	return "redirect:user/dashBoards?id=" + u.getUser_id();
     }
     
     /**
@@ -127,4 +130,15 @@ public class ModuleAPIController {
     	
     	return u;
     }
+    private String generatePrimaryKey() {
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMddhhmmss");
+		String dateAsString = simpleDateFormat.format(new Date());
+		Random random = new Random();
+		String randomString = "";
+		for (int i = 0; i < 3; i++) {
+			randomString += random.nextInt(9);
+		}
+		return dateAsString + randomString;
+
+	}
 }

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -21,7 +21,7 @@
  <div class="header header-filter" >
 	<div class="container">
 		<div class ="row">
-			<form class="form">
+			<form class="form" action="${pageContext.request.contextPath}/saveUser}" method="POST">
 				<div class="col-md-6 col-md-offset-3 col-sm-4 col-sm-offset-2">
 					<div class ="card card-signup">
 						<div class="header header-primary text-center">
@@ -46,7 +46,7 @@
 							<div class = "col-md-6">
 								<input id="password" type ="text" class ="form-control" name = "password" placeholder = "Password" required autofocus>
 							</div>							
-							<button id = "save-btn" class = "btn btn-primary">Register</button>
+							<button id = "submit" class = "btn btn-primary">Register</button>
 							
 	                    </div>
 					</div>
@@ -73,4 +73,4 @@
 		bindUserFormEvents();
 	});
 </script>
-</html>
+</html> --%>

@@ -39,9 +39,9 @@ public class DatabaseConfigMySQL{
    public DataSource dataSource(){
       DriverManagerDataSource dataSource = new DriverManagerDataSource();
       dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-      dataSource.setUrl("jdbc:mysql://localhost:3306/kanbansan");
+      dataSource.setUrl("jdbc:mysql://localhost:3306/kanban");
       dataSource.setUsername("root");
-      dataSource.setPassword("root");
+      dataSource.setPassword("r00t");
       return dataSource;
    }
  

@@ -37,7 +37,7 @@
     body{
     }
 
-    input[type=text], select{
+    input[type=text], input[type=password], select{
     width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -124,35 +124,34 @@
   </nav>
 
   <header class="login_user" >
-     <div class="login_user_container" >
-        <div class="row" align="center">
-          <div class="col-md-5 col-md-3" >
-              <div class="form-login">
-                      <h4>Registration</h4>
-
-                      <input type="text" id="uname" class="form-input" placeholder="Username"/>
-                      </br>
-                      <input type="text" id="upass" class="form-input" placeholder="Password"/>
-                      </br>
-
- <select class="dropdown-content">
-  <option value="volvo">User</option>
-  <option value="saab">Admin</option>
-
- 
-</select></br>
-                      <input type="submit" value="Register">
-              </div>
-          </div>
-        </div>
-     </div>
+		  <form action="${pageContext.request.contextPath}/saveUser" method="POST">
+		  	<div class="login_user_container" >
+		        <div class="row" align="center">
+		          <div class="col-md-5 col-md-3" >
+		              <div class="form-login">
+		                      <h4>Registration</h4>
+		
+		                      <input type="text" name = "email" id="email" class="form-input" placeholder="Email"/>
+		                      </br>
+		                      <input type="text" name = "firstName" id="firstName" class="form-input" placeholder="First Name"/>
+		                      </br>
+		                      <input type="text" name = "lastName" id="lastName" class="form-input" placeholder="Last Name"/>
+		                      </br>
+		                      <input type="password" name = "password" id="pass" class="form-input" placeholder="Password"/>
+		                      </br>
+		
+							 
+							</select></br>
+		                      <input type="submit" value="Register">
+		              </div>
+		          </div>
+		        </div>
+		     </div>
+		  </form>
+     
   </header>
 
-
-
 </body>
-
-
 
 
 </html>
