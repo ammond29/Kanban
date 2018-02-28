@@ -139,14 +139,15 @@
         <div class="row" align="center">
           <div class="col-md-5 col-md-3" >
               <div class="form-login">
-                      <h4>Admin Login</h4>
+                      <h4>Login</h4>
 
                       <input type="text" id="uname" class="form-input" placeholder="Username"/>
                       </br>
                       <input type="text" id="upass" class="form-input" placeholder="Password"/>
                       </br>
 
-                      <input type="submit" value="Login">
+                      <input type="submit" value="Login"></br>
+                      <input type="submit" value="Register">
               </div>
           </div>
         </div>

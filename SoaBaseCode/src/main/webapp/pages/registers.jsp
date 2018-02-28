@@ -141,7 +141,8 @@
 
  
 </select></br>
-                      <input type="submit" value="Register">
+                      <input type="submit" value="Register"></br>
+                       <input type="submit" value="Login">
               </div>
           </div>
         </div>
