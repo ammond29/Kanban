@@ -39,6 +39,10 @@
 =======
 >>>>>>> b3a4f4c683baf7fc2e1e87f7fb115c90528f9a1a
 
+      .priority_colored_low{
+        color: white;
+      }
+
       .modal{
         margin: center;
       }
@@ -116,7 +120,11 @@
                 <div class="panel-heading">Todo</div>
                 <div class="panel-body">
                   <ul class="list-group">
-                    <li class="list-group-item"><span class="glyphicon glyphicon-hand-right"></span> Todo Task 1</span></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-hand-right"></span> Todo Task 1</span>
+                        <div class="priority_level">
+                          <span class="priority_colored_low">Priority: LOW</span>
+                        </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -139,6 +147,9 @@
                         <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
                         <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
                       </div>
+                      <div class="priority_level">
+                          <span class="priority_colored_high">Priority: HIGH</span>
+                        </div>
                     </li>
                   </ul>
                 </div>
@@ -157,6 +168,7 @@
                         List group item heading
                         </label>
                       </div>
+                      <span class="priority_colored_med">Priority: MEDIUM</span>
                     </li>
                   </ul>
                 </div>
