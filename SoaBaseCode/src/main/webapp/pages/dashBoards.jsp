@@ -85,6 +85,69 @@
       {
       margin-left: 0px;
       }
+
+        .modal.right .modal-dialog {
+          position: fixed;
+          margin: auto;
+          width: 320px;
+          height: 100%;
+          -webkit-transform: translate3d(0%, 0, 0);
+              -ms-transform: translate3d(0%, 0, 0);
+               -o-transform: translate3d(0%, 0, 0);
+                  transform: translate3d(0%, 0, 0);
+        }
+
+        .modal.right .modal-content {
+          height: 100%;
+          overflow-y: auto;
+        }
+        
+        .modal.right .modal-body {
+          padding: 15px 15px 80px;
+        }
+              
+      /*Right*/
+        .modal.right.fade .modal-dialog {
+          right: -320px;
+          -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+             -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+               -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+                  transition: opacity 0.3s linear, right 0.3s ease-out;
+        }
+        
+        .modal.right.fade.in .modal-dialog {
+          right: 0;
+        }
+
+      /* ----- MODAL STYLE ----- */
+        .modal-content {
+          border-radius: 0;
+          border: none;
+        }
+
+        .modal-header {
+          border-bottom-color: #EEEEEE;
+          background-color: #FAFAFA;
+        }
+
+      /* ----- v CAN BE DELETED v ----- */
+      body {
+        background-color: #78909C;
+      }
+
+      .demo {
+        padding-top: 60px;
+        padding-bottom: 110px;
+      }
+
+      .btn-demo {
+        margin: 15px;
+        padding: 10px 15px;
+        border-radius: 0;
+        font-size: 16px;
+        background-color: #FFFFFF;
+      }
+
 </style>
 <body>
 
@@ -120,7 +183,8 @@
                 <div class="panel-heading">Todo</div>
                 <div class="panel-body">
                   <ul class="list-group">
-                    <li class="list-group-item"><span class="glyphicon glyphicon-hand-right"></span> Todo Task 1</span>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-hand-right">
+                    <a href="#" data-toggle="modal" data-target="#myModal2"> Task 1</a></span>
                         <div class="priority_level">
                           <span class="priority_colored_low">Priority: LOW</span>
                         </div>
@@ -138,12 +202,10 @@
                     <li class="list-group-item">
                       <div class="checkbox">
                         <input type="checkbox" class="checkb" name="checkbox[]" id="checkbox1" value="1" />
-                        <label for="checkbox">
-                        List group item heading
-                        </label>
+                        <label for="checkbox">List group item heading</label>
                       </div>
                       <div class="pull-right action-buttons">
-                        <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-pencil"></span></a>
                         <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
                         <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
                       </div>
@@ -165,7 +227,7 @@
                       <div class="checkbox">
                         <span class="glyphicon glyphicon-ok"></span>
                         <label for="checkbox">
-                        List group item heading
+                        <a href="#" data-toggle="modal" data-target="#myModal4">Task 1</a>
                         </label>
                       </div>
                       <div class="priority_level">
@@ -240,6 +302,169 @@
         </div>
       </div>
     </div> <!-- /.container -->
+
+
+  <div class="container demo">
+  <!-- Modal Todo -->
+  <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+              <button type="button" class="close" 
+                data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+              <span class="sr-only">Close</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Task 1</h4>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <form action="" method="post" autocomplete="off">
+                <div class="form-group">
+                  <label for="task_title">Task Title:</label>
+                  <input type="text" class="form-control" placeholder=""  id="task_title" name="task_title">
+                </div>
+                <div class="form-group">
+                  <label for="task_details">Task Details:</label>
+                  <textarea class="form-control"  placeholder=""  rows="5" id="task_details" name="task_details"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="due_date">Due Date:</label>
+                  <input type="text" class="form-control" placeholder="" id="due_date" name="due_date">
+                </div>
+                <div class="form-group">
+                  <label for="task_priority">Priority:</label>
+                  <select class="form-control" id="task_priority" name="task_priority">
+                    <option value="Todo">Low</option>
+                    <option value="In Progress">Medium</option>
+                    <option value="In Progress">High</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="task_status">Task Status:</label>
+                  <select class="form-control" id="task_status" name="task_status">
+                    <option value="Todo">Todo</option>
+                    <option value="In Progress">In Progress</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+  
+  <div class="container demo">
+  <!-- Modal InProgress -->
+  <div class="modal right fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+              <button type="button" class="close" 
+                data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+              <span class="sr-only">Close</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Task 1</h4>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <form action="" method="post" autocomplete="off">
+                <div class="form-group">
+                  <label for="task_title">Task Title:</label>
+                  <input type="text" class="form-control" placeholder=""  id="task_title" name="task_title">
+                </div>
+                <div class="form-group">
+                  <label for="task_details">Task Details:</label>
+                  <textarea class="form-control"  placeholder=""  rows="5" id="task_details" name="task_details"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="due_date">Due Date:</label>
+                  <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="due_date" name="due_date">
+                </div>
+                <div class="form-group">
+                  <label for="task_priority">Priority:</label>
+                  <select class="form-control" id="task_priority" name="task_priority">
+                    <option value="Todo">Low</option>
+                    <option value="In Progress">Medium</option>
+                    <option value="In Progress">High</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="task_status">Task Status:</label>
+                  <select class="form-control" id="task_status" name="task_status">
+                    <option value="Todo">Todo</option>
+                    <option value="In Progress">In Progress</option>
+                  </select>
+                </div>
+                <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
+
+              </form>
+            </div>
+          
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+  <div class="container demo">
+  <!-- Modal Todo -->
+  <div class="modal right fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+              <button type="button" class="close" 
+                data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+              <span class="sr-only">Close</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Task 1</h4>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <form action="" method="post" autocomplete="off">
+                <div class="form-group">
+                  <label for="task_title">Task Title:</label>
+                  <input type="text" class="form-control" placeholder=""  id="task_title" name="task_title">
+                </div>
+                <div class="form-group">
+                  <label for="task_details">Task Details:</label>
+                  <textarea class="form-control"  placeholder=""  rows="5" id="task_details" name="task_details"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="due_date">Due Date:</label>
+                  <input type="text" class="form-control" placeholder="" id="due_date" name="due_date">
+                </div>
+                <div class="form-group">
+                  <label for="task_priority">Priority:</label>
+                  <select class="form-control" id="task_priority" name="task_priority">
+                    <option value="Todo">Low</option>
+                    <option value="In Progress">Medium</option>
+                    <option value="In Progress">High</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="task_status">Task Status:</label>
+                  <select class="form-control" id="task_status" name="task_status">
+                    <option value="Todo">Todo</option>
+                    <option value="In Progress">In Progress</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+
+  
+</div><!-- container -->
+
 
 </body>
 <script type="text/javascript">
