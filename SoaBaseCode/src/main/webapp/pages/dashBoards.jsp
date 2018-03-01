@@ -436,7 +436,7 @@
                   <textarea class="form-control"  placeholder=""  rows="5" id="task_details" name="task_details"></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="due_date">Due Date:</label>
+                  <label for="due_date">Date Completed:</label>
                   <input type="text" class="form-control" placeholder="" id="due_date" name="due_date">
                 </div>
                 <div class="form-group">
