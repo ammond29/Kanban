@@ -323,19 +323,19 @@
               <form action="" method="post" autocomplete="off">
                 <div class="form-group">
                   <label for="task_title">Task Title:</label>
-                  <input type="text" class="form-control" placeholder=""  id="task_title" name="task_title">
+                  <input type="text" class="form-control" placeholder=""  id="task_title" name="task_title" disabled>
                 </div>
                 <div class="form-group">
                   <label for="task_details">Task Details:</label>
-                  <textarea class="form-control"  placeholder=""  rows="5" id="task_details" name="task_details"></textarea>
+                  <textarea class="form-control"  placeholder=""  rows="5" id="task_details" name="task_details" disabled></textarea>
                 </div>
                 <div class="form-group">
                   <label for="due_date">Due Date:</label>
-                  <input type="text" class="form-control" placeholder="" id="due_date" name="due_date">
+                  <input type="text" class="form-control" placeholder="" id="due_date" name="due_date" disabled>
                 </div>
                 <div class="form-group">
                   <label for="task_priority">Priority:</label>
-                  <select class="form-control" id="task_priority" name="task_priority">
+                  <select class="form-control" id="task_priority" name="task_priority" disabled>
                     <option value="Todo">Low</option>
                     <option value="In Progress">Medium</option>
                     <option value="In Progress">High</option>
@@ -343,7 +343,7 @@
                 </div>
                 <div class="form-group">
                   <label for="task_status">Task Status:</label>
-                  <select class="form-control" id="task_status" name="task_status">
+                  <select class="form-control" id="task_status" name="task_status" disabled>
                     <option value="Todo">Todo</option>
                     <option value="In Progress">In Progress</option>
                   </select>
@@ -412,7 +412,7 @@
 
   <div class="container demo">
   <!-- Modal Todo -->
-  <div class="modal right fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal right fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
@@ -429,19 +429,19 @@
               <form action="" method="post" autocomplete="off">
                 <div class="form-group">
                   <label for="task_title">Task Title:</label>
-                  <input type="text" class="form-control" placeholder=""  id="task_title" name="task_title">
+                  <input type="text" class="form-control" placeholder=""  id="task_title" name="task_title" disabled>
                 </div>
                 <div class="form-group">
                   <label for="task_details">Task Details:</label>
-                  <textarea class="form-control"  placeholder=""  rows="5" id="task_details" name="task_details"></textarea>
+                  <textarea class="form-control"  placeholder=""  rows="5" id="task_details" name="task_details" disabled></textarea>
                 </div>
                 <div class="form-group">
                   <label for="due_date">Date Completed:</label>
-                  <input type="text" class="form-control" placeholder="" id="due_date" name="due_date">
+                  <input type="text" class="form-control" placeholder="" id="due_date" name="due_date" disabled>
                 </div>
                 <div class="form-group">
                   <label for="task_priority">Priority:</label>
-                  <select class="form-control" id="task_priority" name="task_priority">
+                  <select class="form-control" id="task_priority" name="task_priority" disabled>
                     <option value="Todo">Low</option>
                     <option value="In Progress">Medium</option>
                     <option value="In Progress">High</option>
@@ -449,7 +449,7 @@
                 </div>
                 <div class="form-group">
                   <label for="task_status">Task Status:</label>
-                  <select class="form-control" id="task_status" name="task_status">
+                  <select class="form-control" id="task_status" name="task_status" disabled>
                     <option value="Todo">Todo</option>
                     <option value="In Progress">In Progress</option>
                   </select>
